@@ -575,6 +575,35 @@ If it looks like a nightclub for haunted TypeScript:
 bg = 0.03
 ```
 
+## Acknowledgements
+
+This plugin exists mostly as a small bridge between tools that already do the
+hard work.
+
+Special thanks to [folke](https://github.com/folke) for
+[TokyoNight](https://github.com/folke/tokyonight.nvim) and
+[Snacks.nvim](https://github.com/folke/snacks.nvim).
+
+TokyoNight provides the actual colorscheme foundation here — this plugin only
+nudges a few colors so the theme feels more at home inside a wallpaper-driven
+desktop. Snacks.nvim also makes the optional toggle integration pleasantly easy,
+which is suspiciously civilized for Neovim.
+
+Thanks also to the people behind
+[matugen](https://github.com/InioX/matugen), which does the real color extraction
+magic. `matugen-mix.nvim` does not try to replace it, compete with it, or pretend
+to understand color theory better than it does. It simply reads the palette
+`matugen` generates and lets that palette gently influence Neovim.
+
+In short:
+
+```text
+matugen finds the mood
+TokyoNight provides the room
+Snacks gives us a switch
+this plugin just opens the window a little
+```
+
 ## Debugging
 
 Check that the generated palette can be loaded:
